@@ -5,6 +5,7 @@
 #include "stdint.h"
 #include "systick.h"
 #include <stdio.h>
+#include "bsp_key.h"
 
 int main(void) {
   systick_config();
@@ -13,10 +14,10 @@ int main(void) {
 
   //   usart_send_string("Hello world\n");
   //   printf("%.4f\n", 3 / 2.0);
-  char customer_number[] = {"1561362A"};
-  printf("The Customer Number of Ruifu Su is %s", customer_number);
+
+  // char customer_number[] = {"1561362A"};
+  // printf("The Customer Number of Ruifu Su is %s", customer_number);
   while (1) {
-    delay_1ms(1000);
-    LED2 = 0;
+    key_scan();
   }
 }

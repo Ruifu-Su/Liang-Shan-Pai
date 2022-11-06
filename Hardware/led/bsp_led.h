@@ -5,10 +5,25 @@
 #include "systick.h"
 #include "sys.h"
 
+#define RCU_LED1  	RCU_GPIOE   
+#define PORT_LED1 	GPIOE			
+#define PIN_LED1		GPIO_PIN_3  
+#define LED1 PEout(3)
+
 #define RCU_LED2  	RCU_GPIOD   
 #define PORT_LED2 	GPIOD				
 #define PIN_LED2 		GPIO_PIN_7  
 #define LED2 PDout(7)
+
+#define RCU_LED3  	RCU_GPIOG   
+#define PORT_LED3 	GPIOG			
+#define PIN_LED3 		GPIO_PIN_3  
+#define LED3 PGout(3)
+
+#define RCU_LED4  	RCU_GPIOA   
+#define PORT_LED4 	GPIOA			
+#define PIN_LED4		GPIO_PIN_5  
+#define LED4 PAout(5)
 void led_gpio_config(void); 	  
 
 #endif /* BSP_LED_H */
